@@ -27,6 +27,6 @@ def _make_callback(func):
     def callback(x):
         """Print current function value to logging.INFO."""
         f = func(x)
-        m = 'f={:.4f}'.format(f)
+        m = 'f={:.4f}'.format(f[0])
         logging.info(m)
     return callback
